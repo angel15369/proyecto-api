@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asignacion #4.</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Fronted</h1>
+
+  <div class="container">
+   
+    <div class="section">
+      <h2>Usuarios</h2>
+      <button onclick="listadeusuarios()">Mostrar Usuarios</button>
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Correo</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody id="usuarios"></tbody>
+      </table>
+      <h3>Crear/Actualizar Usuario</h3>
+      <input type="hidden" id="usuarioId" />
+      <input type="text" id="nombre" placeholder="Nombre" />
+      <input type="email" id="correo" placeholder="Correo" />
+      <input type="password" id="clave" placeholder="Clave" />
+      <button onclick="crearOActualizarUsuario()">Guardar Usuario</button>
+    </div>
+
+  
+    <div class="section">
+      <h2>Países</h2>
+      <button onclick="listadepaises()">Mostrar Países</button>
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Gentilicio</th>
+            <th>Capital</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody id="paises"></tbody>
+      </table>
+      <h3>Crear/Actualizar País</h3>
+      <input type="hidden" id="paisId" />
+      <input type="text" id="nombrePais" placeholder="Nombre del País" />
+      <input type="text" id="gentilicio" placeholder="Gentilicio" />
+      <input type="text" id="capital" placeholder="Capital" />
+      <button onclick="crearOActualizarPais()">Guardar País</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
